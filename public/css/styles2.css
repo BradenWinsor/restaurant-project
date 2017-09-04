@@ -63,7 +63,7 @@ img {
     background-color: white;
   }
 .underContainer {
-
+ overflow: auto;
  text-align: center;
 }
 .locations {
