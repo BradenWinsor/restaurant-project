@@ -104,12 +104,14 @@ html, body {
 }
 
 .slick-slide {
-  margin: 0px 20px;
+  /* margin: 0px 20px; */
   height: 400px;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   /*max-width: 393px;*/
   min-width: 252px;
   background-size: cover;
+
+  justify-content: center;
 }
 
 .slick-slide img {
@@ -119,6 +121,8 @@ html, body {
   min-width: 252px;
   height: 393px;
   border: black;
+  /* justify-content: center; */
+  margin: auto;
 }
 
 .slick-prev:before,
