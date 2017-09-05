@@ -18,8 +18,19 @@
   },
   "homepage": "https://github.com/BradenWinsor/restaurant-project#readme",
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "body-parser": "^1.17.2",
     "cors": "^2.8.4",
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-cachebust": "0.0.8",
+    "gulp-concat": "^2.6.1",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-print": "^2.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "lodash": "^4.17.4"
   }
 }
