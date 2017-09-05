@@ -1,11 +1,12 @@
 * {
-  background-color: ;
+  
 }
 .footer {
   background-image: url('../pictures/greybackground.jpg');
   height: 90px;
-
-
+width: 100vw;
+position: absolute;
+left: 0px;
 }
 
 .cafename {
@@ -65,6 +66,8 @@ img {
 .underContainer {
  overflow: auto;
  text-align: center;
+ width: 300%;
+ left: 100px;
 }
 .locations {
 
@@ -148,4 +151,7 @@ align-items: center;
 }
 .adminSubmit {
   margin-top: 20px;
+}
+li {
+  list-style-type: none;
 }
