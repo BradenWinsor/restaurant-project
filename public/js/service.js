@@ -1,10 +1,9 @@
 angular.module('foodApp').service('foodService', function($http){
   
-this.addDish = function(addDish) {
+this.getMenu = function(getMenu) {
     return $http({
-        method: 'POST',
-        url: '/api/addDish',
-        data: addDish
+        method: 'GET',
+        url: '/api/getmenu',
     })
 }
 

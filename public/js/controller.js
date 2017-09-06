@@ -3,6 +3,15 @@ angular.module('foodApp').controller('foodController', function($scope, foodServ
       $("#carousel").carousel();
   });
 
+    foodService.getMenu() 
+    .then(function (response) {
+      console.log(response)
+      $scope.menu = response.data;
+    })
+
+
+
+
   $scope.showPopover = function(){
   $scope.popoverIsVisable = !$scope.popoverIsVisible;
   console.log("show");

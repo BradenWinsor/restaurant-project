@@ -38,6 +38,11 @@ angular.module('foodApp').controller('foodController', ["$scope", "foodService",
     $("#carousel").carousel();
   });
 
+  foodService.getMenu().then(function (response) {
+    console.log(response);
+    $scope.menu = response.data;
+  });
+
   $scope.showPopover = function () {
     $scope.popoverIsVisable = !$scope.popoverIsVisible;
     console.log("show");
@@ -147,11 +152,10 @@ angular.module('foodApp').controller('foodController', ["$scope", "foodService",
 
 angular.module('foodApp').service('foodService', ["$http", function ($http) {
 
-    this.addDish = function (addDish) {
+    this.getMenu = function (getMenu) {
         return $http({
-            method: 'POST',
-            url: '/api/addDish',
-            data: addDish
+            method: 'GET',
+            url: '/api/getmenu'
         });
     };
 }]);

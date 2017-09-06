@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA,SAAS,CAAC;EACN,SAAS,EAAE,IAAI,GAClB","file":"../bundle.css","sourcesContent":[".listmenu {\r\n    font-size: 40px;\r\n}"]}

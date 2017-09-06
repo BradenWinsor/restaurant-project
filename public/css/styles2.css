@@ -155,3 +155,35 @@ align-items: center;
 li {
   list-style-type: none;
 }
+.listmenu {
+  font-size: 40px;
+  text-align: center;
+}
+.menuItemName {
+  font-size: 25px;
+  text-decoration: underline;
+  text-align: center;
+}
+.menuImage {
+  height: 400px;
+  width: 400px;
+ background-size: cover;
+
+}
+.foodinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.foodinfo2 {
+  display: block;
+  width: 200px;
+}
+.aboutContent {
+  font-size: 50px;
+}
+.footerDetail{
+  color: white;
+  margin-top: 5px;
+  justify-content: center;
+}
