@@ -53,7 +53,7 @@ gulp.task('views', function() {
 
 //This task makes a copy of your index.html and compresses it and moves it to the dist folder
 gulp.task('index', function() {
-    gulp.src('./index.html')
+    gulp.src('./public/index.html')
       .pipe(gulp.dest("./dist"));
 });
 

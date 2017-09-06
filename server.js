@@ -18,7 +18,7 @@ massive(config.POSTGRES).then(db => {
   // const USERS = require('./users');
   
   
-  app.use(express.static(__dirname + '/public'));
+  app.use(express.static(__dirname + '/dist'));
   //-------------------------ENDPONTs----------------------------\\
   app.get('/api/getmenu', mainCtrl.getMenu);
 
