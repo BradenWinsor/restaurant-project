@@ -6,20 +6,20 @@ angular.module("foodApp", ['ui.router']).config(["$urlRouterProvider", "$statePr
 
   $stateProvider.state('home', {
     url: "/home",
-    templateUrl: './templates/home.html'
+    templateUrl: './views/home.html'
   }).state('about', {
     url: '/about',
-    templateUrl: './templates/about.html'
+    templateUrl: './views/about.html'
   }).state('order', {
     url: '/order',
-    templateUrl: './templates/order.html'
+    templateUrl: './views/order.html'
     // controller: 'ordercontroller'
   }).state('admin', {
     url: '/admin',
-    templateUrl: './templates/admin.html'
+    templateUrl: './views/admin.html'
   }).state('menu', {
     url: '/menu',
-    templateUrl: './templates/menu.html',
+    templateUrl: './views/menu.html',
     controller: 'foodController'
   });
 

@@ -21,6 +21,7 @@ var paths = {
 
 
 //SASS task, this compiles and compresses from SCSS fiels to a css file
+
 gulp.task('sass', function() {
     return gulp.src(['./public/css/reset.scss','./public/css/**/*.scss'])
     .pipe(sourcemaps.init())
@@ -43,6 +44,7 @@ gulp.task('js', function() {
         .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('./dist'));
 });
+
 
 //this task will compress all of your views but will not compile them into one.
 //the views need to be seperate files for ui-router to work.
@@ -75,6 +77,7 @@ gulp.task('watch', function() {
 
 //when you type gulp and run it in the command like this is the default task that runs.
 //this will run all the tasks listed in the array in order. when its done it watches for changes and will recompile if anything changes.
-gulp.task('default', ['js', 'sass', 'index', 'views', 'pictures',
+gulp.task('default', ['js', 'sass', 'index', 'views', 'pictures', 
     'watch'
 ]);
+
